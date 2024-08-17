@@ -1,0 +1,69 @@
+{
+	"info": {
+		"_postman_id": "1354b1a8-45e5-4c4c-b36f-6f76ca6f378e",
+		"name": "tarot-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3562085"
+	},
+	"item": [
+		{
+			"name": "pregunta",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"texto\": \"¿Qué me depara el futuro?\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/pregunta",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pregunta"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "pregunta-realizadas",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/pregunta",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pregunta"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
